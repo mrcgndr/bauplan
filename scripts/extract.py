@@ -12,7 +12,7 @@ from tqdm.auto import tqdm
 from bauplan.extract import extract_annotations, extract_textboxes_and_quadrants
 
 parser = argparse.ArgumentParser(
-    description="Runs the Bodypart Explainer with given config files.",
+    description="Extraktion von Markierungen und zugehörigen Annotationen aus vektorisierten Bauplänen. Die Ergebnisse werden als Excelsheet gespeichert.",
     formatter_class=argparse.ArgumentDefaultsHelpFormatter,
 )
 parser.add_argument("-i", "--input_dir", type=str, help="Pfad zum Ordner mit Bauplänen.", required=True)
